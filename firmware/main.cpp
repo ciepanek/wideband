@@ -1,3 +1,5 @@
+#define LCD_i2C
+
 #include "ch.h"
 #include "hal.h"
 
@@ -79,6 +81,7 @@ int main()
             chThdSleepMilliseconds(status == Status::RunningClosedLoop ? 700 : 50);
         }
         else
+
         {
             // green is off
             palClearPad(LED_GREEN_PORT, LED_GREEN_PIN);
@@ -95,7 +98,12 @@ int main()
 
             chThdSleepMilliseconds(2000);
         }
-#endif
+        
+        #endif
+
+        #ifdef LCD_I2C
+
+        #endif
     }
 }
 
