@@ -101,7 +101,7 @@ int main()
         
         #endif
 
-        #ifdef LCD_I2C
+        #ifdef LCD_i2C
 
         #endif
     }
