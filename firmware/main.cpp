@@ -78,7 +78,7 @@ int main()
             palTogglePad(LED_GREEN_PORT, LED_GREEN_PIN);
 
             // Slow blink if closed loop, fast if not
-            chThdSleepMilliseconds(status == Status::RunningClosedLoop ? 700 : 50);
+            chThdSleepMilliseconds(status == Status::RunningClosedLoop ? 700 : 10);
         }
         else
 
